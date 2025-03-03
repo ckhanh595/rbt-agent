@@ -1,0 +1,3 @@
+[console_scripts]
+mqtt_ros_bridge = robot_agent.mqtt_ros_bridge:main
+

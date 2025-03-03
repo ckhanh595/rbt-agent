@@ -1,0 +1,24 @@
+[0.572s] Invoking command in '/home/robotagent/robot_agent_ws/src/robot_agent': PYTHONPATH=/home/robotagent/robot_agent_ws/build/robot_agent/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_agent build --build-base /home/robotagent/robot_agent_ws/build/robot_agent/build install --record /home/robotagent/robot_agent_ws/build/robot_agent/install.log --single-version-externally-managed install_data
+[0.775s] running egg_info
+[0.775s] writing ../../build/robot_agent/robot_agent.egg-info/PKG-INFO
+[0.782s] writing dependency_links to ../../build/robot_agent/robot_agent.egg-info/dependency_links.txt
+[0.782s] writing entry points to ../../build/robot_agent/robot_agent.egg-info/entry_points.txt
+[0.782s] writing requirements to ../../build/robot_agent/robot_agent.egg-info/requires.txt
+[0.782s] writing top-level names to ../../build/robot_agent/robot_agent.egg-info/top_level.txt
+[0.783s] reading manifest file '../../build/robot_agent/robot_agent.egg-info/SOURCES.txt'
+[0.784s] writing manifest file '../../build/robot_agent/robot_agent.egg-info/SOURCES.txt'
+[0.784s] running build
+[0.784s] running build_py
+[0.785s] copying robot_agent/mqtt_ros_bridge.py -> /home/robotagent/robot_agent_ws/build/robot_agent/build/lib/robot_agent
+[0.785s] running install
+[0.785s] running install_lib
+[0.786s] copying /home/robotagent/robot_agent_ws/build/robot_agent/build/lib/robot_agent/mqtt_ros_bridge.py -> /home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages/robot_agent
+[0.787s] byte-compiling /home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages/robot_agent/mqtt_ros_bridge.py to mqtt_ros_bridge.cpython-310.pyc
+[0.788s] running install_data
+[0.788s] running install_egg_info
+[0.790s] removing '/home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages/robot_agent-0.0.1-py3.10.egg-info' (and everything under it)
+[0.790s] Copying ../../build/robot_agent/robot_agent.egg-info to /home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages/robot_agent-0.0.1-py3.10.egg-info
+[0.791s] running install_scripts
+[0.809s] Installing mqtt_ros_bridge script to /home/robotagent/robot_agent_ws/install/robot_agent/lib/robot_agent
+[0.809s] writing list of installed files to '/home/robotagent/robot_agent_ws/build/robot_agent/install.log'
+[0.829s] Invoked command in '/home/robotagent/robot_agent_ws/src/robot_agent' returned '0': PYTHONPATH=/home/robotagent/robot_agent_ws/build/robot_agent/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robotagent/robot_agent_ws/install/robot_agent/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robot_agent build --build-base /home/robotagent/robot_agent_ws/build/robot_agent/build install --record /home/robotagent/robot_agent_ws/build/robot_agent/install.log --single-version-externally-managed install_data
