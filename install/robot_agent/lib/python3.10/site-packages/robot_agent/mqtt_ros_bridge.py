@@ -15,7 +15,8 @@ class MqttRosBridge(Node):
         
         # Parameters (you can modify these for your setup)
         # This IP points to the host machine from the VM
-        self.mqtt_broker = "10.0.2.2"  # Use the default NAT gateway for VirtualBox
+        # self.mqtt_broker = "10.0.2.2"  # Use the default NAT gateway for VirtualBox
+        self.mqtt_broker = "192.168.110.61"
         self.mqtt_port = 1883
         self.mqtt_client_id = "ros_robot_agent"
         
@@ -25,7 +26,8 @@ class MqttRosBridge(Node):
         self.mqtt_telemetry_topic = "robot/telemetry"  # Telemetry data from Robot
         
         # ROS topics
-        self.cmd_vel_topic = "cmd_vel"  # Standard topic for robot movement
+        # self.cmd_vel_topic = "cmd_vel"  # Standard topic for robot movement
+        self.cmd_vel_topic = "turtle1/cmd_vel"  # Standard topic for robot movement
         self.status_topic = "robot_status"
         self.telemetry_topic = "robot_telemetry"
         
@@ -104,7 +106,7 @@ class MqttRosBridge(Node):
                 twist_msg.linear.y = linear_y
                 twist_msg.angular.z = angular_z
                 self.cmd_vel_pub.publish(twist_msg)
-                self.get_logger().info(f"Published movement command: linear=({linear_x}, {linear_y}), angular_z={angular_z}")
+                self.get_logger().info(f"Published movement turtlesim: linear=({linear_x}, {linear_y}), angular_z={angular_z}")
                 
                 # Publish status update
                 self.publish_status(f"Executing move command: linear=({linear_x}, {linear_y}), angular_z={angular_z}")
